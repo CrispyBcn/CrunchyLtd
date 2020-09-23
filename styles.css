@@ -24,15 +24,6 @@ body {
   line-height: 1.5;
 }
 
-main {
-  max-width: 1250px;
-  margin: 0 auto 0 auto;
-}
-
-.spacer {
-  height: 14rem;
-}
-
 #header {
   position: fixed;
   top: 0;
@@ -79,6 +70,12 @@ li {
 .nav-link:hover {
   color: var(--brand-color);
   box-shadow: var(--nav-shadow);
+}
+
+.container {
+  max-width: 1250px;
+  margin: 0 auto 0 auto;
+  padding-bottom: 200px;
 }
 
 #title {
@@ -144,7 +141,7 @@ p {
 /*Align the text and make it appear on hover*/
 .overlay-title,
 .overlay-text {
-  width: 80%;
+  width: 85%;
   opacity: 0;
   transition: 0.5s ease;
   position: absolute;
@@ -173,11 +170,17 @@ p {
   opacity: 1;
 }
 
+.wrapper{
+  background: linear-gradient(180deg, rgba(255,255,255,1) 28%, rgba(236,236,236,0.93) 100%);
+}
+
 #quote-section {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 0 20px;
+  padding-bottom: 150px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 blockquote {
@@ -334,7 +337,8 @@ footer {
   }
   #quote-section {
     flex-direction: column;
-    margin: 0 40px;
+    margin-left: 40px;
+    margin-right: 40px;
   }
   #author {
     display: none;
