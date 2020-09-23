@@ -9,17 +9,17 @@
       <link rel="icon" type="image/png" href="images/favicon.png"/>
       <!--Start of Tawk.to Script-->
       <script type="text/javascript">
-      var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-      (function(){
-      var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-      s1.async=true;
-      s1.src='https://embed.tawk.to/5f5eb1c94704467e89ee9f9c/default';
-      s1.charset='UTF-8';
-      s1.setAttribute('crossorigin','*');
-      s0.parentNode.insertBefore(s1,s0);
-      })();
-</script>
-<!--End of Tawk.to Script-->
+         var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+         (function(){
+         var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+         s1.async=true;
+         s1.src='https://embed.tawk.to/5f5eb1c94704467e89ee9f9c/default';
+         s1.charset='UTF-8';
+         s1.setAttribute('crossorigin','*');
+         s0.parentNode.insertBefore(s1,s0);
+         })();
+      </script>
+      <!--End of Tawk.to Script-->
    </head>
    <body>
       <!--HEADER-->
@@ -37,12 +37,12 @@
             </ul>
          </nav>
       </header>
-      <!--PRODUCTS-->
       <main>
+         <!--PRODUCTS-->
          <h1 id="title">Our products</h1>
-         <section id="product-section">
+         <section id="product-section" class="container">
             <div id="product1" class="product-container">
-               <img  class="product-img" src="https://i2.wp.com/lifemadesimplebakes.com/wp-content/uploads/2016/09/4-Ingredient-No-Knead-Artisan-Bread-4.jpg" alt="Crunchy bread">
+               <img class="product-img" src="https://i2.wp.com/lifemadesimplebakes.com/wp-content/uploads/2016/09/4-Ingredient-No-Knead-Artisan-Bread-4.jpg" alt="Crunchy bread">
                <p class="read-more">READ MORE</p>
                <h3 class="overlay-title">CRUNCHY BREAD</h3>
                <p class="overlay-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dictum, massa gravida luctus congue, ante dolor tincidunt purus, sed lobortis sapien nisi ac nunc.</p>
@@ -66,19 +66,20 @@
                <p class="overlay-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dictum, massa gravida luctus congue, ante dolor tincidunt purus, sed lobortis sapien nisi ac nunc.</p>
             </div>
          </section>
-         <div class="spacer"></div>
          <!--QUOTE-->
-         <section id="quote-section">
-            <blockquote cite="Pan_Andrzej">
-               <p>The Crunchy Ltd. bread was so <span class="highlight">hot, fresh and crunchy</span>, that I ate it all and only then I realized that I forgot to put any ham or cheese on it. And that I also have daughters, who didn't get a single slice. Going back for a new loaf was nothing but a pleasure.</p>
-               <cite>--Mr. Andrzej / Bread Enthusiast and Family Man</cite>
-            </blockquote>
-            <div>
-               <img id="author" src="https://memegenerator.net/img/images/72574576.jpg" alt="Mr. Andrzej">
-            </div>
-         </section>
+         <div class="wrapper">
+            <section id="quote-section" class="container">
+               <blockquote cite="Pan_Andrzej">
+                  <p>The Crunchy Ltd. bread was so <span class="highlight">hot, fresh and crunchy</span>, that I ate it all and only then I realized that I forgot to put any ham or cheese on it. And that I also have daughters, who didn't get a single slice. Going back for a new loaf was nothing but a pleasure.</p>
+                  <cite>--Mr. Andrzej / Bread Enthusiast and Family Man</cite>
+               </blockquote>
+               <div>
+                  <img id="author" src="https://memegenerator.net/img/images/72574576.jpg" alt="Mr. Andrzej">
+               </div>
+            </section>
+         </div>
          <!--ABOUT US-->
-         <section id="about-section">
+         <section id="about-section" class="container">
             <div class="about-text">
                <h2>About us</h2>
                <p>We are a bakery with over 100 years of experience. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur varius ante quis ligula blandit vulputate. Duis tincidunt mollis purus, vel venenatis velit molestie in. Vivamus eget massa sed nulla posuere cursus. Suspendisse id justo purus. Sed eu purus id purus convallis malesuada. Pellentesque mollis orci elit, id tincidunt elit mattis ut. Quisque a arcu ante. </p>
@@ -92,19 +93,9 @@
          <div class="footer-container">
             <div id="email-section" class="information">
                <p>If you want to receive exciting news and anegdotes about bread - subrcribe to our newsletter</p>
-               <form id="form" 
-                  action="https://www.freecodecamp.com/email-submit" 
-                  target="_blank"
-                  method="post">
-                  <input id="email"
-                     type="email"
-                     name="email"
-                     placeholder="Enter your email"
-                     pattern="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$"
-                     required>
-                  <input id="submit" 
-                     type="submit" 
-                     value="Subscribe">
+               <form id="form" action="https://www.freecodecamp.com/email-submit" target="_blank" method="post">
+                  <input id="email" type="email" name="email" placeholder="Enter your email" pattern="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$" required>
+                  <input id="submit" type="submit" value="Subscribe">
                </form>
             </div>
             <div id="hours" class="information">
