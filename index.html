@@ -38,31 +38,41 @@
       <main>
          <!--HERO-->
          <div id="hero-container" class="hero-container">
-            <div id="hero-overlay" class="hero-overlay"></div>
+            <div class="hero-overlay">
+               <div class="hero-text">
+                  <h1>Crunchy <span></span></h1>
+                  <p>come get yours</p>
+               </div>
+               <div class="dwn-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 13l-7 7-7-7m14-8l-7 7-7-7" />
+                  </svg>
+               </div>
+            </div>
          </div>
          <!--PRODUCTS-->
          <h2 id="title">Our products</h2>
          <section id="product-section" class="container">
             <div id="product1" class="product-container">
-               <img class="product-img" src="https://i2.wp.com/lifemadesimplebakes.com/wp-content/uploads/2016/09/4-Ingredient-No-Knead-Artisan-Bread-4.jpg" alt="Crunchy bread">
+               <img class="product-img" src="https://github.com/CrispyBcn/CrunchyLtd/blob/master/images/bread-w500.jpg?raw=true" alt="Crunchy bread">
                <p class="read-more">READ MORE</p>
                <h3 class="overlay-title">CRUNCHY BREAD</h3>
                <p class="overlay-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dictum, massa gravida luctus congue, ante dolor tincidunt purus, sed lobortis sapien nisi ac nunc.</p>
             </div>
             <div id="product2" class="product-container">
-               <img class="product-img" src="https://bakingamoment.com/wp-content/uploads/2019/01/IMG_2542-authentic-french-baguette-recipe-720x1080.jpg" alt="Crunchy baguette">
+               <img class="product-img" src="https://github.com/CrispyBcn/CrunchyLtd/blob/master/images/baguette-w500.jpg?raw=true" alt="Crunchy baguette">
                <p class="read-more">READ MORE</p>
                <h3 class="overlay-title">CRUNCHY BAGUETTE</h3>
                <p class="overlay-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dictum, massa gravida luctus congue, ante dolor tincidunt purus, sed lobortis sapien nisi ac nunc.</p>
             </div>
             <div id="product3" class="product-container">
-               <img class="product-img" src="https://www.tymianek.blog/img/blog/e70af0dd8225418ba49abbc40946f485_126_original.jpg" alt="Crunchy sigara boregi">
+               <img class="product-img" src="https://github.com/CrispyBcn/CrunchyLtd/blob/master/images/sigara-w500.jpg?raw=true" alt="Crunchy sigara boregi">
                <p class="read-more">READ MORE</p>
                <h3 class="overlay-title">SİGARA BÖREĞİ</h3>
                <p class="overlay-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dictum, massa gravida luctus congue, ante dolor tincidunt purus, sed lobortis sapien nisi ac nunc.</p>
             </div>
             <div id="product4" class="product-container">
-               <img class="product-img" src="https://poprostupycha.com.pl/my_uploads/2017/09/drozdzowki10.jpg" alt="Sweet drożdżówka">
+               <img class="product-img" src="https://github.com/CrispyBcn/CrunchyLtd/blob/master/images/drozdzowka-w500.jpg?raw=true" alt="Sweet drożdżówka">
                <p class="read-more">READ MORE</p>
                <h3 class="overlay-title">DROŻDŻÓWKA</h3>
                <p class="overlay-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dictum, massa gravida luctus congue, ante dolor tincidunt purus, sed lobortis sapien nisi ac nunc.</p>
@@ -86,7 +96,7 @@
                <h2>About us</h2>
                <p>We are a bakery with over 100 years of experience. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur varius ante quis ligula blandit vulputate. Duis tincidunt mollis purus, vel venenatis velit molestie in. Vivamus eget massa sed nulla posuere cursus. Suspendisse id justo purus. Sed eu purus id purus convallis malesuada. Pellentesque mollis orci elit, id tincidunt elit mattis ut. Quisque a arcu ante. </p>
             </div>
-            <iframe id="video" src="https://www.youtube-nocookie.com/embed/U4dyWZZVeWI" allow="encrypted-media; picture-in-picture" allowfullscreen>
+            <iframe title="Youtube video - How to Make 3 Artisanal Breads from 13 Ingredients | Handcrafted | Bon Appétit" id="video" src="https://www.youtube-nocookie.com/embed/U4dyWZZVeWI" allow="encrypted-media; picture-in-picture" allowfullscreen>
             </iframe>
          </section>
       </main>
@@ -94,9 +104,11 @@
       <footer>
          <div class="footer-container">
             <div id="email-section" class="information">
-               <p>If you want to receive exciting news and anegdotes about bread - subrcribe to our newsletter</p>
                <form id="form" action="https://www.freecodecamp.com/email-submit" target="_blank" method="post">
-                  <input id="email" type="email" name="email" placeholder="Enter your email" pattern="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$" required>
+                  <label>
+                     <p>If you want to receive exciting news and anegdotes about bread - subrcribe to our newsletter</p>
+                     <input id="email" type="email" name="email" placeholder="Enter your email" pattern="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$" required>
+                  </label>
                   <input id="submit" type="submit" value="Subscribe">
                </form>
             </div>
@@ -104,11 +116,11 @@
                <p class="hours">We are open:</p>
                <p><strong>Mon-Fri:</strong> 6:00 - 18:00</p>
                <p><strong>Sat-Sun:</strong> 6:00 - 14:00</p>
-               <iframe id="fb-btn" src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Ffacebook.com%2Ffreecodecamp%2F&width=78&layout=button_count&action=like&size=large&share=false&height=21&appId" allow="encrypted-media">
+               <iframe title="Facebook like button" id="fb-btn" src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Ffacebook.com%2Ffreecodecamp%2F&width=78&layout=button_count&action=like&size=large&share=false&height=21&appId" allow="encrypted-media">
                </iframe>
             </div>
             <div id="map-div" class="information">
-               <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2436.8132359446486!2d20.91215649994259!3d48.33073112604827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473f6981c0b6cf37%3A0xb78f6ad52e243ce7!2zS3VwYSwga8O2enPDqWdow6F6YQ!5e0!3m2!1spl!2spl!4v1597403607795!5m2!1spl!2spl" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+               <iframe title="Google Map pin of our location" id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2436.8132359446486!2d20.91215649994259!3d48.33073112604827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473f6981c0b6cf37%3A0xb78f6ad52e243ce7!2zS3VwYSwga8O2enPDqWdow6F6YQ!5e0!3m2!1spl!2spl!4v1597403607795!5m2!1spl!2spl" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             </div>
          </div>
       </footer>
