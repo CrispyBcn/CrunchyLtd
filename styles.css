@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap'); 
 
 * {
   box-sizing: border-box;
@@ -74,15 +75,71 @@ li {
 
 /*HERO*/
 .hero-container {
-  padding: 0 !important;
+  //padding: 0 !important;
   height: 100vh;
   width: 100vw;
   max-width: 100%;
   background-image: url("https://raw.githubusercontent.com/CrispyBcn/CrunchyLtd/master/images/hero.jpg");
   background-size: cover;
-  filter: brightness(85%) contrast(85%) saturate(95%);
+  //filter: brightness(85%) contrast(85%) saturate(95%);
 }
 
+/*To make it a bit darker*/
+.hero-overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.15);
+  backdrop-filter: contrast(90%);
+}
+
+.hero-text {
+  max-width: 90%;
+  font-family: 'Bebas Neue', Nunito, cursive;
+  position: relative;
+  top: 20%;
+  left: 10%;
+  color: #ffffff;
+  text-shadow: 1px 1px 3px #000000;
+}
+
+.hero-text h1 {
+  font-size: 7rem;
+  line-height: 1;
+  letter-spacing: 0.8rem;
+}
+
+.hero-text span::before {
+  color: var(--brand-color);
+  content: "BREAD";
+  animation: products 20s linear infinite;
+}
+@keyframes products {
+  0% {content: "BREAD";}
+  19% {content: "BAGUETTE";}
+  34% {content: "BUNS";}
+  51% {content: "SIGARA";}
+  68% {content: "COOKIES";}
+  85% {content: "EVERYTHING";}
+  100% {content: "AND HOT";}
+}
+
+.hero-text p {
+  font-size: 4.5rem;
+  line-height: 0.8;
+  letter-spacing: 0.15rem;
+  font-style: italic;
+}
+
+.dwn-icon {
+  height: 60px;
+  width: 60px;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  color: #ffffff;
+}
+
+/*title, product*/
 .container {
   max-width: 1250px;
   margin: 0 auto 0 auto;
@@ -197,7 +254,7 @@ p {
 blockquote {
   font-family: "Roboto Slab", serif;
   font-weight: 300;
-  max-width: 850px;
+  max-width: 800px;
   line-height: 1.5;
   margin: 0;
   position: relative;
