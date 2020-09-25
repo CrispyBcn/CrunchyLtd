@@ -75,13 +75,12 @@ li {
 
 /*HERO*/
 .hero-container {
-  //padding: 0 !important;
-  height: 100vh;
+  height: 95vh;
   width: 100vw;
   max-width: 100%;
   background-image: url("https://raw.githubusercontent.com/CrispyBcn/CrunchyLtd/master/images/hero.jpg");
   background-size: cover;
-  //filter: brightness(85%) contrast(85%) saturate(95%);
+  /*filter: brightness(85%) contrast(85%) saturate(95%); Maybe for future use. I created an overlay instead of this.*/
 }
 
 /*To make it a bit darker*/
@@ -111,16 +110,15 @@ li {
 .hero-text span::before {
   color: var(--brand-color);
   content: "BREAD";
-  animation: products 20s linear infinite;
+  animation: products 10s linear infinite;
 }
 @keyframes products {
   0% {content: "BREAD";}
-  19% {content: "BAGUETTE";}
-  34% {content: "BUNS";}
-  51% {content: "SIGARA";}
-  68% {content: "COOKIES";}
-  85% {content: "EVERYTHING";}
-  100% {content: "AND HOT";}
+  16% {content: "BAGUETTE";}
+  33% {content: "BUNS";}
+  50% {content: "SIGARA";}
+  66% {content: "COOKIES";}
+  83% {content: "AND HOT";}
 }
 
 .hero-text p {
@@ -131,12 +129,13 @@ li {
 }
 
 .dwn-icon {
-  height: 60px;
-  width: 60px;
+  height: 40px;
+  width: 40px;
   position: relative;
   left: 50%;
-  top: 50%;
+  top: 60%;
   color: #ffffff;
+  filter: drop-shadow( .5px 0px 1px #000000);
 }
 
 /*title, product*/
@@ -311,6 +310,13 @@ blockquote:after {
   flex-basis: 650px;
   margin-right: 70px;
 }
+.about-text h2 {
+  font-size: 3.5rem;
+  margin-top: 0;
+}
+.about-text p {
+  font-size: 2rem;
+}
 
 #video {
   border: 0px;
@@ -428,6 +434,9 @@ footer {
     margin-right: 0px;
     margin-bottom: 50px;
   }
+  .about-text p {
+    font-size: 2.2rem;
+  }
   #video {
     border: 0px;
     max-width: 100%;
@@ -457,8 +466,18 @@ footer {
   .nav-link {
     padding: 2rem 1rem;
   }
+  .hero-container {
+  background-image: url("https://github.com/CrispyBcn/CrunchyLtd/blob/master/images/hero-w620.jpg?raw=true");
+  }
   footer {
     padding: 10px;
+  }
+  #quote-section {
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   blockquote:before {
     left: -1rem;
@@ -481,6 +500,9 @@ footer {
 }
 
 @media (max-width: 460px) {
+  #header-img {
+    height: 40px;
+}
   #product-section {
     flex-direction: column;
     align-items: center;
