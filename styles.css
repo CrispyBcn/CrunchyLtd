@@ -99,7 +99,7 @@ li {
   left: 10%;
   color: #ffffff;
   text-shadow: 1px 1px 3px #000000;
-  animation: intro 1.5s ease 1;
+  animation: intro 0.5s ease 1;
 }
 
 @keyframes intro {
@@ -148,6 +148,23 @@ li {
   top: 60%;
   color: #ffffff;
   filter: drop-shadow( .5px 0px 1px #000000);
+  animation: bounce 2s ease-in-out 2s 3;
+}
+/*every x25% it comes to 0, then on 40% and 60% goes up*/
+@keyframes bounce {
+  0%,
+  25%,
+  50%,
+  75%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-12px);
+  }
+  60% {
+    transform: translateY(-7px);
+  }
 }
 
 /*title, product*/
