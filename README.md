@@ -1,5 +1,4 @@
 # CrunchyLtd
-Crunchy bakery landing page
 
-It's a project done for freecodecamp challenge, moved here to also host a tawk.to button and play with it.
+It's a project done as freecodecamp challenge. Now the goal is to try out Tidio.
 https://crispybcn.github.io/CrunchyLtd/
